@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>🌤 Weather Forecast</h1>
+        <div class="search-bar">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="weather-result" class="weather-result hidden">
+            <h2 id="city-name"></h2>
+            <p id="weather-description"></p>
+            <div class="weather-details">
+                <div class="weather-card">
+                    <h3>🌡️ Temp</h3>
+                    <p><span id="temperature"></span>°C</p>
+                </div>
+                <div class="weather-card">
+                    <h3>🌡️ Feels Like</h3>
+                    <p><span id="feels-like"></span>°C</p>
+                </div>
+                <div class="weather-card">
+                    <h3>💧 Humidity</h3>
+                    <p><span id="humidity"></span>%</p>
+                </div>
+                <div class="weather-card">
+                    <h3>🌬️ Wind</h3>
+                    <p><span id="wind-speed"></span> m/s</p>
+                </div>
+                <div class="weather-card">
+                    <h3>📊 Pressure</h3>
+                    <p><span id="pressure"></span> hPa</p>
+                </div>
+                <div class="weather-card">
+                    <h3>🌅 Sunrise</h3>
+                    <p><span id="sunrise"></span></p>
+                </div>
+                <div class="weather-card">
+                    <h3>🌇 Sunset</h3>
+                    <p><span id="sunset"></span></p>
+                </div>
+            </div>
+            <div id="forecast-container" class="forecast-container hidden">
+                <h2>5-Day Forecast</h2>
+            </div>
+        </div>
+        <p id="error-message" class="hidden">City not found. Please try again.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
